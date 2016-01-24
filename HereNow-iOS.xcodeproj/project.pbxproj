@@ -12,6 +12,8 @@
 		41AE5B241C54B6E3007529F2 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 41AE5B221C54B6E3007529F2 /* Main.storyboard */; };
 		41AE5B261C54B6E3007529F2 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 41AE5B251C54B6E3007529F2 /* Assets.xcassets */; };
 		41AE5B291C54B6E3007529F2 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 41AE5B271C54B6E3007529F2 /* LaunchScreen.storyboard */; };
+		437B4A2F1C54D70F00858AE1 /* Phone.swift in Sources */ = {isa = PBXBuildFile; fileRef = 437B4A2E1C54D70F00858AE1 /* Phone.swift */; };
+		437B4A311C54D71B00858AE1 /* MessageUI.m in Sources */ = {isa = PBXBuildFile; fileRef = 437B4A301C54D71B00858AE1 /* MessageUI.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -22,6 +24,8 @@
 		41AE5B251C54B6E3007529F2 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		41AE5B281C54B6E3007529F2 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		41AE5B2A1C54B6E3007529F2 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		437B4A2E1C54D70F00858AE1 /* Phone.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Phone.swift; sourceTree = "<group>"; };
+		437B4A301C54D71B00858AE1 /* MessageUI.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MessageUI.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -60,6 +64,8 @@
 				41AE5B251C54B6E3007529F2 /* Assets.xcassets */,
 				41AE5B271C54B6E3007529F2 /* LaunchScreen.storyboard */,
 				41AE5B2A1C54B6E3007529F2 /* Info.plist */,
+				437B4A301C54D71B00858AE1 /* MessageUI.m */,
+				437B4A2E1C54D70F00858AE1 /* Phone.swift */,
 			);
 			path = "HereNow-iOS";
 			sourceTree = "<group>";
@@ -136,6 +142,8 @@
 			buildActionMask = 2147483647;
 			files = (
 				41AE5B211C54B6E3007529F2 /* ViewController.swift in Sources */,
+				437B4A311C54D71B00858AE1 /* MessageUI.m in Sources */,
+				437B4A2F1C54D70F00858AE1 /* Phone.swift in Sources */,
 				41AE5B1F1C54B6E3007529F2 /* AppDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -284,6 +292,7 @@
 				41AE5B2F1C54B6E3007529F2 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
