@@ -19,24 +19,50 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <mapView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" mapType="standard" translatesAutoresizingMaskIntoConstraints="NO" id="JZu-bQ-gWz">
-                                <rect key="frame" x="0.0" y="20" width="600" height="580"/>
+                                <rect key="frame" x="0.0" y="108" width="600" height="492"/>
                             </mapView>
+                            <navigationBar contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="oCO-7W-5Kq">
+                                <rect key="frame" x="0.0" y="20" width="600" height="44"/>
+                                <items>
+                                    <navigationItem title="HereNow" id="evM-Bc-gte"/>
+                                </items>
+                            </navigationBar>
+                            <searchBar contentMode="redraw" placeholder="What's your destination?" translatesAutoresizingMaskIntoConstraints="NO" id="o6V-Ec-Poa">
+                                <rect key="frame" x="0.0" y="64" width="600" height="44"/>
+                                <textInputTraits key="textInputTraits"/>
+                            </searchBar>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
                         <constraints>
-                            <constraint firstItem="wfy-db-euE" firstAttribute="top" secondItem="JZu-bQ-gWz" secondAttribute="bottom" id="7qe-Zz-KeW"/>
-                            <constraint firstAttribute="trailingMargin" secondItem="JZu-bQ-gWz" secondAttribute="trailing" constant="-20" id="Jip-I5-RH8"/>
-                            <constraint firstItem="JZu-bQ-gWz" firstAttribute="top" secondItem="y3c-jy-aDJ" secondAttribute="bottom" id="YOf-wG-XX7"/>
-                            <constraint firstItem="JZu-bQ-gWz" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leadingMargin" constant="-20" id="j76-SH-Ple"/>
+                            <constraint firstItem="wfy-db-euE" firstAttribute="top" secondItem="JZu-bQ-gWz" secondAttribute="bottom" id="2N3-Uj-g5d"/>
+                            <constraint firstItem="o6V-Ec-Poa" firstAttribute="top" secondItem="oCO-7W-5Kq" secondAttribute="bottom" id="8Gy-6V-2UA"/>
+                            <constraint firstItem="JZu-bQ-gWz" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leadingMargin" constant="-20" id="FEx-jB-eNi"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="o6V-Ec-Poa" secondAttribute="trailing" constant="-20" id="KFh-8D-zAV"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="oCO-7W-5Kq" secondAttribute="trailing" constant="-20" id="VJH-ad-EXr"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="JZu-bQ-gWz" secondAttribute="trailing" constant="-20" id="cT1-g4-Q6x"/>
+                            <constraint firstItem="o6V-Ec-Poa" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leadingMargin" constant="-20" id="drm-si-4vS"/>
+                            <constraint firstItem="oCO-7W-5Kq" firstAttribute="top" secondItem="y3c-jy-aDJ" secondAttribute="bottom" id="gxg-0g-kTF"/>
+                            <constraint firstItem="JZu-bQ-gWz" firstAttribute="top" secondItem="o6V-Ec-Poa" secondAttribute="bottom" id="p6F-MZ-3tA"/>
+                            <constraint firstItem="oCO-7W-5Kq" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leadingMargin" constant="-20" id="yVc-1j-OFm"/>
                         </constraints>
                     </view>
                     <connections>
                         <outlet property="mapView" destination="JZu-bQ-gWz" id="6Tz-LT-Jjd"/>
+                        <outlet property="searchDisplayController" destination="A6v-Jd-EQ0" id="8wb-jn-gtL"/>
+                        <outlet property="searchText" destination="o6V-Ec-Poa" id="3BU-Rz-2kZ"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+                <searchDisplayController id="A6v-Jd-EQ0">
+                    <connections>
+                        <outlet property="delegate" destination="BYZ-38-t0r" id="DPO-4i-iXz"/>
+                        <outlet property="searchContentsController" destination="BYZ-38-t0r" id="mHh-cw-40q"/>
+                        <outlet property="searchResultsDataSource" destination="BYZ-38-t0r" id="5hq-XN-8So"/>
+                        <outlet property="searchResultsDelegate" destination="BYZ-38-t0r" id="kpq-U0-MEf"/>
+                    </connections>
+                </searchDisplayController>
             </objects>
-            <point key="canvasLocation" x="78" y="171"/>
+            <point key="canvasLocation" x="-106" y="172"/>
         </scene>
     </scenes>
 </document>
